@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Creative - Start Bootstrap Theme</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./Creative images/favicon.ico" type="image/x-icon">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <!-- bootstrap-icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- styling is here -->
+    <style>
+        * {
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .navigation-menu {
+            background-image:
+                linear-gradient(rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%),
+                url('./Creative images/img/bg-masthead.jpg');
+            height: 100vh;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .opener {
+            width: 100%;
+        }
+
+        .container {
+            padding: .5vw 2vw;
+        }
+
+        .navbar {
+            padding: 1vh 0;
+            background: transparent !important;
+        }
+
+        .nav-link {
+            color: rgba(0, 0, 0, 0.7);
+            padding: 0 1rem;
+            font-weight: 600;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.7);
+            letter-spacing: .5px;
+        }
+
+        .nav-link:hover {
+            color: #fff;
+        }
+
+        .navbar-brand:hover {
+            color: #fff;
+        }
+
+        .navbar-brand {
+            color: #000;
+            padding: .5vh 3.8vw;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.7);
+            letter-spacing: .7px;
+        }
+
+        .navbar-nav {
+            gap: 1vw;
+        }
+
+        .section1 .image-content {
+            padding-top: 13vw;
+        }
+
+        .section1 .divider {
+            height: 0.2rem;
+            max-width: 3.25rem;
+            margin: 1.3rem auto;
+            background-color: #f4623a;
+            opacity: 1;
+        }
+
+        .section1 .head {
+            width: 54%;
+
+        }
+
+        .section1 .main-head {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section1 h1 {
+            font-weight: 700;
+            letter-spacing: 3px;
+            line-height: 3.9rem;
+        }
+
+        .section1 p {
+            letter-spacing: .5px;
+            font-size: 17px;
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        .section1 .para {
+            width: 53%;
+            line-height: 1.8rem;
+
+        }
+
+
+
+        .section1 .rounded-pill {
+            padding: 1.25rem 2.25rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 10rem;
+            background-color: #f4623a;
+        }
+
+        .section1 .rounded-pill:hover {
+            background-color: #CF5331;
+        }
+
+        /* section2 styling starts here */
+
+
+        .section2 {
+            background-color: #F4623A;
+            padding-top: 15vh;
+            padding-bottom: 15vh;
+        }
+
+        .section2 .divider {
+            height: 0.2rem;
+            max-width: 3.25rem;
+            margin: 1.3rem auto;
+            background-color: #ffffff;
+            opacity: 1;
+        }
+
+        .section2 .inner-para {
+            width: 54%;
+        }
+
+        .section2 .paragraph {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        .section2 .rounded-pill {
+            padding: 1.25rem 2.25rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 10rem;
+            background-color: #ffffff;
+        }
+
+        .section2 .rounded-pill:hover {
+            background-color: #D3D4D5;
+        }
+
+
+        /* section3 styling is here */
+
+
+        .section3 {
+            padding-top: 15vh;
+            padding-bottom: 10vh;
+        }
+
+
+        .section3 .head {
+            padding-top: 10px;
+            padding-bottom: 3px;
+        }
+
+        .section3 .divider {
+            height: 0.2rem;
+            max-width: 3.25rem;
+            margin: 1.3rem auto;
+            background-color: #f4623a;
+            opacity: 1;
+        }
+
+        .section3 h2 {
+            letter-spacing: .5px;
+        }
+
+        .section3 p {
+            color: #6c757d !important;
+            font-weight: 100;
+        }
+
+        .section3 h3 {
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .section3 i {
+            color: #F4623A;
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .section3 .content {
+            padding: 1vw 1vw;
+        }
+
+
+        /* section4 styling is here */
+        .section4 {
+            padding-top: -1vh;
+        }
+
+        .section4 .container-fluid {
+            margin: 0;
+            padding: 0;
+        }
+
+        .section4 .col-md-4 {
+            padding: 0;
+            margin: 0;
+        }
+
+        .section4 .row {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        .section4 img {
+            cursor: pointer;
+        }
+
+        /* section5 styling is here */
+
+        .section5 {
+            padding-top: 15vh;
+            padding-bottom: 15vh;
+            background-color: #212529;
+        }
+
+        .section5 .rounded-pill {
+            padding: 1.25rem 2.25rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 10rem;
+            background-color: #ffffff;
+            margin-top: -1vw;
+        }
+
+        .section5 .rounded-pill:hover {
+            background-color: #D3D4D5;
+        }
+
+        .section5 .inner-content {
+            width: 100%;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section5 .inner-main {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* section6 styling is here */
+
+        .section6 {
+            padding-top: 15vh;
+        }
+
+        .section6 .divider {
+            height: 0.2rem;
+            max-width: 3.25rem;
+            margin: 1.5rem auto;
+            background-color: #f4623a;
+            opacity: 1;
+        }
+
+        .section6 .paragraph {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .section6 p {
+            text-align: center;
+            width: 40%;
+            color: #6c757d !important;
+            font-weight: 100;
+            letter-spacing: .2px;
+        }
+        .section6 .inner-contact{
+            padding: 0 50vh;
+        }
+        .section6 label{
+            font-weight: 100;
+        
+        }
+        .section6 .rounded-pill{
+            padding: 1.25rem 2.25rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 10rem;
+            background-color: #f4623a;
+            display: block;
+            width: 100%;
+        }
+        .section6 .rounded-pill:hover{
+            background-color: #CF5331;
+        }
+
+        /* section7 styling is here */
+
+        .section7{
+            padding: 5vh 0;
+        }
+        .section7 i{
+            color: #6c757d !important;
+            font-size: 2rem;
+            margin-bottom: 2vh;
+        }
+
+
+        /* section8 styling is here */
+
+
+        .section8{
+            padding-top: 12vh;
+            padding-bottom: 5vh;
+        }
+        .section8 .small{
+            color: #6c757d !important;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="opener">
+        <div class="section1">
+            <div class="navigation-menu">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                            <a class="navbar-brand fs-5" href="#">Bootstrap</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#services">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="image-content">
+                    <div class="image-inner-content">
+                        <div class="main-head">
+                            <div class="head text-center">
+                                <h1 class="text-white display-5">Your Favorite Place for Free Bootstrap Themes</h1>
+                            </div>
+                        </div>
+                        <div class="divider">
+                            <hr>
+                        </div>
+                        <div class="main-para d-flex align-items-center justify-content-center">
+                            <div class="para">
+                                <p class="text-white text-center">Start Bootstrap can help you build better websites
+                                    using the
+                                    Bootstrap framework! Just download a theme and start customizing, no strings
+                                    attached!</p>
+                            </div>
+                        </div>
+                        <div class="button mt-4 text-center">
+                            <button type="button" class="btn btn-primary rounded-pill">FIND OUT MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- we have got section starts here -->
+
+
+
+        <div id="about" class="section2">
+            <div class="inner-content">
+                <div class="head text-center">
+                    <h2 class="text-white">We've got what you need!</h2>
+                </div>
+                <div class="divider">
+                    <hr>
+                </div>
+                <div class="para text-center d-flex justify-content-center align-items-center">
+                    <div class="inner-para">
+                        <p class="paragraph">Start Bootstrap has everything you need to get your new website up and
+                            running in no time! Choose one of our open source, free to download, and easy to use themes!
+                            No strings attached!</p>
+                    </div>
+                </div>
+                <div class="button mt-4 text-center">
+                    <button type="button" class="btn text-dark btn-primary rounded-pill fw-bold">GET STARTED!</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- section 3 is starting here -->
+
+
+        <div id="services" class="section3">
+            <div class="inner-content">
+                <div class="head text-center">
+                    <h2 class="text-dark">At Your Service</h2>
+                </div>
+                <div class="divider">
+                    <hr>
+                </div>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="content">
+                                <div class="icon py-1">
+                                    <i class="fa-regular fa-gem"></i>
+                                </div>
+                                <h3>Sturdy Themes</h3>
+
+                                <div class="para">
+                                    <p>Our themes are updated regularly to keep them bug free!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 starts here -->
+                        <div class="col-md-3 text-center">
+                            <div class="content">
+                                <div class="icon py-1">
+                                    <i class="fa-solid fa-laptop"></i>
+                                </div>
+                                <h3>Up to Date</h3>
+
+                                <div class="para">
+                                    <p>All dependencies are kept current to keep things fresh.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 starts here -->
+                        <div class="col-md-3 text-center">
+                            <div class="content">
+                                <div class="icon py-1">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                                <h3>Ready to Publish</h3>
+
+                                <div class="para">
+                                    <p>You can use this design as is, or you can make changes!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4 starts here -->
+                        <div class="col-md-3 text-center">
+                            <div class="content">
+                                <div class="icon py-1">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <h3>Made with Love</h3>
+
+                                <div class="para">
+                                    <p>Is it really open source if it's not made with love?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section4 is starting here -->
+
+
+        <div id="portfolio" class="section4">
+            <div class="inner-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="image">
+                                <img class="img-fluid" src="./Creative images/img/portfolio/fullsize/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image">
+                                <img class="img-fluid" src="./Creative images/img/portfolio/fullsize/2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image">
+                                <img class="img-fluid" src="./Creative images/img/portfolio/fullsize/3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd row starts here -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="image">
+                                <img class="img-fluid" src="./Creative images/img/portfolio/fullsize/4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image">
+                                <img class="img-fluid" src="./Creative images/img/portfolio/fullsize/5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image">
+                                <img class="img-fluid" src="./Creative images/img/portfolio/fullsize/6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- section5 is starting here -->
+
+        <div class="section5">
+            <div class="inner-content">
+                <div class="inner-main">
+                    <div class="head py-2 text-center">
+                        <h2 class="text-white">Free Download at Start Bootstrap!</h2>
+                    </div>
+                    <div class="button mt-4 text-center">
+                        <button type="button" class="btn text-dark btn-primary rounded-pill fw-bold">DOWNLOAD
+                            NOW!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- section6 is starting here -->
+
+        <div id="contact" class="section6">
+            <div class="head text-center">
+                <h2>Let's Get In Touch!</h2>
+            </div>
+            <div class="divider">
+                <hr>
+            </div>
+            <div class="paragraph">
+                <p>Ready to start your next project with us? Send us a messages and we will get back to you as soon as
+                    possible!</p>
+            </div>
+
+            <div class="contact-section py-3">
+                <div class="inner-contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="inner-form mt-3">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Full Name</label>
+                                      </div>
+                                      <div class="form-floating">
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Email Address</label>
+                                      </div>
+                                      <div class="form-floating mt-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Phone Number</label>
+                                      </div>
+                                      <div class="form-floating mt-3">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 10rem"></textarea>
+                                        <label for="floatingTextarea2">Message</label>
+                                      </div>
+                                      <div class="button mt-4 text-center">
+                                        <button type="button" class="btn btn-primary rounded-pill">SUBMIT</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer starting here -->
+
+        <div class="section7">
+            <div class="2nd-lastfooter d-flex justify-content-center align-items-center">
+                <div class="icon-phone">
+                    <i class="bi bi-phone text-center align-items-center justify-content-center d-flex"></i>
+                    <div>+1 (555) 123-4567</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- last section8 is here -->
+
+    <div class="section8 d-flex justify-content-center align-items-center">
+        <div class="footer">
+            <div class="small">Copyright © 2023 - Company Name</div>
+        </div>
+    </div>
+
+    <!-- scripting is herre -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
